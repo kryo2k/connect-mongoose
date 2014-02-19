@@ -1,0 +1,44 @@
+{
+  "name": "connect-mongo",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "Hans Doller <kryo2k@gmail.com>",
+  "description": "A MongoDb session store which integrates with Mongoose models.",
+  "contributors": [ 
+    {
+      "name": "Hans Doller",
+      "email": "kryo2k@gmail.com"
+    } 
+  ],
+  "bin": {
+  },
+  "scripts": {
+  },
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kryo2k/connect-mongoose.git"
+  },
+  "keywords": [
+    "connect",
+    "mongo",
+    "mongoose",
+    "mongodb",
+    "session",
+    "express"
+  ],
+  "dependencies" : {
+    "mongodb": "1.3.x",
+	"mongoose": "3.5.x",
+	"lodash": "2.4.x"
+  },
+  "analyze": false,
+  "devDependencies": {
+  },
+  "bundledDependencies": [
+  ],  
+  "license": "Apache License",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
