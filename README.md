@@ -5,7 +5,7 @@ Port of kcbanner's Connect-Mongo (MongoStore) to use mongoose models for storing
 
 # Installation
 ```
-npm install connect-mongoose
+npm install connect-mongoose-model
 ```
 
 # Quick example
@@ -15,7 +15,7 @@ npm install connect-mongoose
 var // node requirements:
 express = require('express'),
 mongoose = require('mongoose'),
-connectMongoose = require('connect-mongoose');
+connectMongoose = require('connect-mongoose-model');
 
 var // create a minimalistic schema for storing sessions data:
 Schema = mongoose.Schema,

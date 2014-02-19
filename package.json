@@ -1,6 +1,5 @@
 {
-  "name": "connect-mongo",
-  "preferGlobal": true,
+  "name": "connect-mongoose-model",
   "version": "0.1.0",
   "author": "Hans Doller <kryo2k@gmail.com>",
   "description": "A MongoDb session store which integrates with Mongoose models.",
@@ -10,10 +9,6 @@
       "email": "kryo2k@gmail.com"
     } 
   ],
-  "bin": {
-  },
-  "scripts": {
-  },
   "main": "./index.js",
   "repository": {
     "type": "git",
