@@ -29,21 +29,23 @@ defaults = {
 /**
  * MongooseStore bootstrap constructor
  *
- * @param {Express} express         Instance of Express/Connect
+ * @param {Express} Session         Instance of express-session
  * @param {Model}   mongooseModel   Model to use for sessions
  * @return {Function}
  */
-function MongooseStore(express, mongooseModel) {
+function MongooseStore(session, mongooseModel) {
   var
-  self = this, Store = express.session.Store;
+  self = this;
 
-  if(!express || !express.session) {
-    throw 'Express was not passed in constructor.';
+  if(!session || !session.Store) {
+    throw 'express-session was not passed in constructor.';
   }
 
   if(!mongooseModel || !mongooseModel.findById) {
     throw 'Mongoose Model was not passed in constructor.';
   }
+
+  var Store = session.Store;
 
   /**
    * MongooseStore session store constructor
